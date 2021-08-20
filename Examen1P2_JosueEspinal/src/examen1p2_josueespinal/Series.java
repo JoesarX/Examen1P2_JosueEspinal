@@ -1,27 +1,27 @@
 package examen1p2_josueespinal;
 
 public class Series extends Contenido{
-    private int temporadas;
+    private String temporadas;
     private String clasificacion;
     private String estreno;
-    private int actores;
+    private String actores;
 
     public Series() {
         super();
     }
 
-    public Series(int temporadas, String clasificacion, String estreno, int actores) {
+    public Series(String temporadas, String clasificacion, String estreno, String actores) {
         this.temporadas = temporadas;
         this.clasificacion = clasificacion;
         this.estreno = estreno;
         this.actores = actores;
     }
 
-    public int getTemporadas() {
+    public String getTemporadas() {
         return temporadas;
     }
 
-    public void setTemporadas(int temporadas) {
+    public void setTemporadas(String temporadas) {
         this.temporadas = temporadas;
     }
 
@@ -41,11 +41,11 @@ public class Series extends Contenido{
         this.estreno = estreno;
     }
 
-    public int getActores() {
+    public String getActores() {
         return actores;
     }
 
-    public void setActores(int actores) {
+    public void setActores(String actores) {
         this.actores = actores;
     }
 
