@@ -36,21 +36,6 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        cb_listar = new javax.swing.JComboBox<>();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        nombre_field1 = new javax.swing.JTextField();
-        precio_field1 = new javax.swing.JTextField();
-        calificacion_field1 = new javax.swing.JTextField();
-        fecha_field1 = new javax.swing.JTextField();
-        empresa_field1 = new javax.swing.JTextField();
-        boton_add1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -63,154 +48,22 @@ public class Main extends javax.swing.JFrame {
         empresa_field = new javax.swing.JTextField();
         nombre_field = new javax.swing.JTextField();
         boton_add = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        cb_listar = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        nombre_field1 = new javax.swing.JTextField();
+        calificacion_field1 = new javax.swing.JTextField();
+        fecha_field1 = new javax.swing.JTextField();
+        empresa_field1 = new javax.swing.JTextField();
+        boton_add1 = new javax.swing.JButton();
+        precio_field1 = new javax.swing.JTextField();
+        boton_add2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 644, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("EDITAR SERVICIO", jPanel3);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 644, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("REMOVER SERVICIOS", jPanel4);
-
-        cb_listar.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cb_listarItemStateChanged(evt);
-            }
-        });
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel8.setText("NOMBRE:");
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel9.setText("PRECIO:");
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel10.setText("CALIFICACION:");
-
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel11.setText("FECHA DE CREACION:");
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel12.setText("EMPRESA");
-
-        nombre_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        nombre_field1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nombre_field1ActionPerformed(evt);
-            }
-        });
-
-        precio_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        precio_field1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                precio_field1ActionPerformed(evt);
-            }
-        });
-
-        calificacion_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-
-        fecha_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-
-        empresa_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-
-        boton_add1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        boton_add1.setText("CAMBIAR");
-        boton_add1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton_add1MouseClicked(evt);
-            }
-        });
-        boton_add1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton_add1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(cb_listar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nombre_field1)
-                            .addComponent(precio_field1)
-                            .addComponent(calificacion_field1)
-                            .addComponent(fecha_field1)
-                            .addComponent(empresa_field1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(254, 254, 254)
-                        .addComponent(boton_add1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(97, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGap(0, 16, Short.MAX_VALUE)
-                .addComponent(cb_listar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(nombre_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(precio_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(calificacion_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(fecha_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(empresa_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addComponent(boton_add1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
-        );
-
-        jTabbedPane1.addTab("EDITAR SERVICIOS", jPanel5);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -321,6 +174,143 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("AÑADIR SERVICIO", jPanel1);
 
+        cb_listar.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_listarItemStateChanged(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("NOMBRE:");
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel9.setText("PRECIO:");
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("CALIFICACION:");
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel11.setText("FECHA DE CREACION:");
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel12.setText("EMPRESA");
+
+        nombre_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        nombre_field1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombre_field1ActionPerformed(evt);
+            }
+        });
+
+        calificacion_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        fecha_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        empresa_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        boton_add1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        boton_add1.setText("CAMBIAR");
+        boton_add1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_add1MouseClicked(evt);
+            }
+        });
+        boton_add1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_add1ActionPerformed(evt);
+            }
+        });
+
+        precio_field1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        precio_field1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                precio_field1ActionPerformed(evt);
+            }
+        });
+
+        boton_add2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        boton_add2.setText("BORRAR");
+        boton_add2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_add2MouseClicked(evt);
+            }
+        });
+        boton_add2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_add2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(cb_listar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(nombre_field1)
+                            .addComponent(calificacion_field1)
+                            .addComponent(fecha_field1)
+                            .addComponent(empresa_field1, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                            .addComponent(precio_field1)))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(166, 166, 166)
+                        .addComponent(boton_add1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(73, 73, 73)
+                        .addComponent(boton_add2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(97, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(0, 16, Short.MAX_VALUE)
+                .addComponent(cb_listar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(nombre_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(precio_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(calificacion_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(fecha_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(empresa_field1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(boton_add1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(boton_add2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16))
+        );
+
+        jTabbedPane1.addTab("EDITAR SERVICIOS", jPanel5);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -340,18 +330,6 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void precio_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precio_fieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_precio_fieldActionPerformed
-
-    private void nombre_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombre_fieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nombre_fieldActionPerformed
-
-    private void boton_addMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_addMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_boton_addMouseClicked
 
     private void boton_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_addActionPerformed
         String nombre;
@@ -377,24 +355,38 @@ public class Main extends javax.swing.JFrame {
         cb_listar.setModel(modelo);
     }//GEN-LAST:event_boton_addActionPerformed
 
-    private void cb_listarItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_listarItemStateChanged
-        if (evt.getStateChange() == 2) {
-            int nose = cb_listar.getSelectedIndex();
-            nombre_field1.setText(s.get(nose).getNombre());
-            precio_field1.setText(s.get(nose).getPrecio());
-            calificacion_field1.setText(s.get(nose).getCalificacion());
-            fecha_field1.setText(s.get(nose).getFecha());
-            empresa_field1.setText(s.get(nose).getEmpresa());
-        }
-    }//GEN-LAST:event_cb_listarItemStateChanged
-
-    private void nombre_field1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombre_field1ActionPerformed
+    private void boton_addMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_addMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_nombre_field1ActionPerformed
+    }//GEN-LAST:event_boton_addMouseClicked
+
+    private void nombre_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombre_fieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombre_fieldActionPerformed
+
+    private void precio_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precio_fieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_precio_fieldActionPerformed
+
+    private void boton_add2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_add2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton_add2ActionPerformed
+
+    private void boton_add2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_add2MouseClicked
+        int index = cb_listar.getSelectedIndex();
+        s.remove(index);
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_listar.getModel();
+        modelo.removeElementAt(index);
+        cb_listar.setModel(modelo);
+        JOptionPane.showMessageDialog(null, "El servicio se removio con exito.");
+    }//GEN-LAST:event_boton_add2MouseClicked
 
     private void precio_field1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precio_field1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_precio_field1ActionPerformed
+
+    private void boton_add1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_add1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton_add1ActionPerformed
 
     private void boton_add1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_add1MouseClicked
         int index = cb_listar.getSelectedIndex();
@@ -408,22 +400,34 @@ public class Main extends javax.swing.JFrame {
         calificacion = calificacion_field1.getText();
         fecha = fecha_field1.getText();
         empresa = empresa_field1.getText();
-        Streaming nuevo = new Streaming(nombre, precio, calificacion, fecha, empresa);
-        s.add(nuevo);
-        nombre_field1.setText("");
+        s.get(index).setNombre(nombre);
+        s.get(index).setEmpresa(empresa);
+        s.get(index).setCalificacion(calificacion);
+        s.get(index).setFecha(fecha);
+        s.get(index).setPrecio(precio);
         precio_field1.setText("");
+        nombre_field1.setText("");
         calificacion_field1.setText("");
         fecha_field1.setText("");
         empresa_field1.setText("");
         JOptionPane.showMessageDialog(null, "El servicio se cambio con exito.");
-        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_listar.getModel();
-        modelo.addElement(nombre);
-        cb_listar.setModel(modelo);
+
     }//GEN-LAST:event_boton_add1MouseClicked
 
-    private void boton_add1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_add1ActionPerformed
+    private void nombre_field1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombre_field1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_boton_add1ActionPerformed
+    }//GEN-LAST:event_nombre_field1ActionPerformed
+
+    private void cb_listarItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_listarItemStateChanged
+        if (evt.getStateChange() == 2) {
+            int nose = cb_listar.getSelectedIndex();
+            nombre_field1.setText(s.get(nose).getNombre());
+            precio_field1.setText(s.get(nose).getPrecio());
+            calificacion_field1.setText(s.get(nose).getCalificacion());
+            fecha_field1.setText(s.get(nose).getFecha());
+            empresa_field1.setText(s.get(nose).getEmpresa());
+        }
+    }//GEN-LAST:event_cb_listarItemStateChanged
 
     public ArrayList<Streaming> getS() {
         return s;
@@ -518,6 +522,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton boton_add;
     private javax.swing.JButton boton_add1;
+    private javax.swing.JButton boton_add2;
     private javax.swing.JTextField calificacion_field;
     private javax.swing.JTextField calificacion_field1;
     private javax.swing.JComboBox<String> cb_listar;
@@ -536,8 +541,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField nombre_field;
