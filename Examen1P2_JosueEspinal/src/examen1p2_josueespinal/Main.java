@@ -2,6 +2,7 @@ package examen1p2_josueespinal;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Scanner;
 import javax.accessibility.AccessibleContext;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -18,17 +19,72 @@ import javax.swing.table.DefaultTableModel;
 
 public class Main extends javax.swing.JFrame {
 
+    Scanner sc = new Scanner(System.in);
     ArrayList<Streaming> s = new ArrayList<Streaming>();
+    ArrayList<Usuarios> u = new ArrayList<Usuarios>();
 
     public Main() {
+        login();
         System.out.println("hola");
         initComponents();
         DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_listar.getModel();
         for (int i = 0; i < s.size(); i++) {
             modelo.addElement(s.get(i).getNombre());
         }
-        cb_listar.setModel(modelo);
+    }
+    public  void login(){
+        int opcion;
+        Scanner sc = new Scanner(System.in);
+        boolean validacion8 = false;
+        while (validacion8 == false) {
+            opcion = menu1();
+            System.out.print("Ingrese Usuario: ");
+            String user = sc.next();
+            System.out.print("Ingrese Password: ");
+            String password = sc.next();
+            boolean validacion = false;
+            if (opcion == 2) {
+                JOptionPane.showMessageDialog(null, "Se creo exitosamente su nuevo usuario.");
+                Usuarios usu = new Usuarios();
+                usu.setUser(user);
+                usu.setPassword(password);
+                u.add(usu);
+            } else if (opcion == 1) {
+                if (user.equals("david") == true && password.equals("1234") == true) {
+                    validacion8 = true;
+                } else {
+                    boolean validacion2 = false;
+                    for(int i = 0; i<u.size();i++){
+                        if(u.get(i).getUser().equals(user) == true && u.get(i).getPassword().equals(password) == true){ 
+                            validacion2 = true;
+                            JOptionPane.showMessageDialog(null, "Bienvenido usuario " + user);;
+                            validacion8 = true;
+                        }
+                    }
+                    if(validacion2 == false){
+                        JOptionPane.showMessageDialog(null, "No existe tal usuario con tal contrasenia.");
+                    }
+                }
+            }
+        }
+    }
 
+    public static int menu1() {
+        Scanner sc = new Scanner(System.in);
+        boolean validacion = false;
+        int choice = 0;
+        while (validacion != true) {
+            System.out.println("ELIJA UNA:");
+            System.out.println("1- Login\n"
+                    + "2- Sign Up");
+            choice = sc.nextInt();
+            if (choice >= 1 && choice <= 3) {
+                validacion = true;
+            } else {
+                System.out.println("La opcion ingresada no es valida.");
+            }
+        }
+        return choice;
     }
 
     @SuppressWarnings("unchecked")
@@ -484,8 +540,6 @@ public class Main extends javax.swing.JFrame {
     public void setjLabel3(JLabel jLabel3) {
         this.jLabel3 = jLabel3;
     }
-
-    
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
