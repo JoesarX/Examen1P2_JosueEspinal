@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Streaming {
     
     private String nombre;
-    private double precio;
+    private String precio;
     private String calificacion;
     private String fecha;
     private String empresa;
@@ -16,7 +16,7 @@ public class Streaming {
         
     }
 
-    public Streaming(String nombre, double precio, String calificacion, String fecha, String empresa) {
+    public Streaming(String nombre, String precio, String calificacion, String fecha, String empresa) {
         this.nombre = nombre;
         this.precio = precio;
         this.calificacion = calificacion;
@@ -32,11 +32,11 @@ public class Streaming {
         this.nombre = nombre;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
